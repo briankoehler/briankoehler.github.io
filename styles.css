@@ -10,7 +10,7 @@ html {
     overflow: hidden;
     width: 100vw;
     max-width: 100vw;
-    font-family: "Quicksand";
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     height: 8vh;
     line-height: 8vh;
