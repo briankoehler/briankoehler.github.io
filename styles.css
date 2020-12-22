@@ -4,6 +4,21 @@ html {
     width: 100vw !important;
 }
 
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 92vh;
+    margin: 0;
+    display: flex;
+}
+
+.container .column {
+    flex: 1;
+}
+
 /* Navigation Bar */
 .nav {
     background-color: #12263A;
@@ -16,6 +31,8 @@ html {
     line-height: 8vh;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .nav a {
@@ -46,24 +63,28 @@ html {
 }
 
 /* Portrait */
+.portrait-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
 .portrait {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 50%;
+    width: 50vw;
     height: auto;
 }
 
 /* Hello Message */
-.landing-message {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    top: 8vh;
-    width: 50%;
+.hello-container {
     display: flex;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    height: 100%;
 }
 
 .hello {

@@ -11,7 +11,7 @@
     <title>Brian Koehler</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 </head>
@@ -24,15 +24,23 @@
         <a href="#projects">PROJECTS</a>
     </nav>
 
-    <!-- Portrait -->
-    <div>
-        <img src="assets/portrait.png" class="portrait">
+    <div class="container" style="padding-top: 8vh;">
+
+        <div class="column">
+            <div class="hello-container">
+                <p class="hello"><span class="type"></span></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="portrait-container">
+                <img src="assets/portrait.png" alt="Portrait Photo" class="portrait">
+            </div>
+        </div>
+
     </div>
 
-    <!-- Hello -->
-    <div class="landing-message">
-        <p class="hello"><span class="type"></span></p>
-    </div>
+    <div class="container" id="about"></div>
 
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
