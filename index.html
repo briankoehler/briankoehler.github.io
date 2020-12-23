@@ -14,33 +14,56 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css" />
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="nav">
-        <a class="active main" href="/">BRIAN KOEHLER</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
+        <a class="active main" href="#home">BRIAN KOEHLER</a>
+        <div class="nav-tabs">
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+        </div>
     </nav>
 
-    <div class="container" style="padding-top: 8vh;">
+    <div id="fullpage">
 
-        <div class="column">
-            <div class="hello-container">
-                <p class="hello"><span class="type"></span></p>
+        <div class="section container" style="padding-top: 8vh;">
+
+            <div class="column">
+                <div class="hello-container">
+                    <p class="hello"><span class="type"></span></p>
+                </div>
             </div>
+    
+            <div class="column">
+                <div class="portrait-container">
+                    <img src="assets/portrait.png" alt="Portrait Photo" class="portrait">
+                </div>
+            </div>
+    
         </div>
+    
+        <div class="section container">
 
-        <div class="column">
-            <div class="portrait-container">
-                <img src="assets/portrait.png" alt="Portrait Photo" class="portrait">
+            <div class="column">
+                <div class="hello-container">
+                    <p class="hello">Test</p>
+                </div>
             </div>
+
+            <div class="column">
+                <div class="hello-container">
+                    <p class="hello">Test</p>
+                </div>
+            </div>
+            
         </div>
 
     </div>
 
-    <div class="container" id="about"></div>
 
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
@@ -54,6 +77,15 @@
             typeSpeed: 80,
             backSpeed: 80,
             backDelay: 3000
+        });
+    </script>
+
+    <!-- fullPage.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
+    <script>
+        new fullpage("#fullpage", {
+            verticalCentered: false,
+            anchors: ['home', 'about']
         });
     </script>
 
