@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brian Koehler">
-    <meta name="description" content="Peronal Website">
+    <meta name="description" content="Personal Website">
 
     <title>Brian Koehler</title>
 
@@ -16,6 +16,9 @@
     <link href="./styles.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css" />
+    
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
 </head>
 
 <body>
@@ -25,12 +28,15 @@
         <div class="nav-tabs">
             <a href="#about">ABOUT</a>
             <a href="#projects">PROJECTS</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="gg-menu"></i>
+            </a>
         </div>
     </nav>
 
     <div id="fullpage">
 
-        <div class="section container" style="padding-top: 8vh;">
+        <div class="section container">
 
             <div class="column">
                 <div class="hello-container">
@@ -48,16 +54,27 @@
     
         <div class="section container">
 
-            <div class="column">
-                <div class="hello-container">
-                    <p class="hello">Test</p>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="hello-container">
-                    <p class="hello">Test</p>
-                </div>
+            <div class="about-container">
+                <p class="header">About Me</p>
+                <p class="about-info">
+                    I'm currently a third year student attending the University of Florida 
+                    studying Computer Science.  My projects thus far at the university have primarily 
+                    consisted of web applications.  In recent years, I have interned with a data 
+                    science company, as well as with a cybersecurity organization doing web development.
+                </p>
+                <p class="about-info">
+                    As of now, I am developing a Discord bot to access Riot Games' official API and store 
+                    games in an SQLite database.  Check it out all my projects <a href="#projects">here</a> or 
+                    on my <a href="https://www.github.com/briankoehler">Github</a>!
+                </p>
+                <p class="about-info">
+                     In my free time, I also participate in a diabolo performance known as VERTAX; we perform on 
+                     occasion, such as at TedxUF 2019, but are on hiatus due to the COVID-19 pandemic.
+                </p>
+                <p class="about-info">
+                    I am currently seeking to gain more experience with software and web development; feel 
+                    free to contact me below with any opportunities.
+                </p>
             </div>
             
         </div>
@@ -74,8 +91,8 @@
                 "PRINT('HELLO WORLD')"
             ],
             smartBackspace: true,
-            typeSpeed: 80,
-            backSpeed: 80,
+            typeSpeed: 30,
+            backSpeed: 100,
             backDelay: 3000
         });
     </script>
