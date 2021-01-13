@@ -1,111 +1,27 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Brian Koehler">
-    <meta name="description" content="Personal Website">
-
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Brian Koehler</title>
 
+    <!-- Quicksand Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:300,400,500,600,700&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css" />
-    
-    <!-- css.gg -->
-    <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'> -->
+    <link rel='stylesheet' href='styles.css'>
+
+    <script src='https://use.fontawesome.com/f0960bd8c6.js'></script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="nav">
-        <a class="active main" href="#home">BRIAN KOEHLER</a>
-        <div class="nav-tabs">
-            <a href="#about">ABOUT</a>
-            <a href="https://www.github.com/briankoehler">PROJECTS</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="gg-menu"></i>
-            </a>
-        </div>
-    </nav>
-
-    <div id="fullpage">
-
-        <div class="section container">
-
-            <div class="column">
-                <div class="hello-container">
-                    <p class="hello"><span class="type"></span></p>
-                </div>
-            </div>
-    
-            <div class="column">
-                <div class="portrait-container">
-                    <img src="assets/portrait.png" alt="Portrait Photo" class="portrait">
-                </div>
-            </div>
-    
-        </div>
-    
-        <div class="section container">
-
-            <div class="about-container">
-                <p class="header">About Me</p>
-                <p class="about-info">
-                    I'm currently a third year student attending the University of Florida 
-                    studying Computer Science.  My projects thus far at the university have primarily 
-                    consisted of web applications.  In recent years, I have interned with a data 
-                    science company, as well as with a cybersecurity organization doing web development.
-                </p>
-                <p class="about-info">
-                    As of now, I am developing a Discord bot to access Riot Games' official API and store 
-                    games in an SQLite database.  Check it out all my projects <a href="#projects">here</a> or 
-                    on my <a href="https://www.github.com/briankoehler">Github</a>!
-                </p>
-                <p class="about-info">
-                     In my free time, I also participate in a diabolo performance known as VERTAX; we perform on 
-                     occasion, such as at TedxUF 2019, but are on hiatus due to the COVID-19 pandemic.
-                </p>
-                <p class="about-info">
-                    I am currently seeking to gain more experience with software and web development; feel 
-                    free to contact me below with any opportunities.
-                </p>
-            </div>
-            
-        </div>
-
+    <div class='container'>
+        <h1 id='name' class='txt-lg glow'>Brian Koehler</h1>
     </div>
-
-
-    <!-- Typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script>
-        var typed = new Typed(".type", {
-            strings: [
-                "PRINT('HELLO')",
-                "PRINT('HELLO WORLD')"
-            ],
-            smartBackspace: true,
-            typeSpeed: 30,
-            backSpeed: 100,
-            backDelay: 3000
-        });
-    </script>
-
-    <!-- fullPage.js -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
-    <script>
-        new fullpage("#fullpage", {
-            verticalCentered: false,
-            anchors: ['home', 'about']
-        });
-    </script>
-
+    <div class='container'>
+        <!-- <i id='cycle' class='fa fa-space-shuttle left-to-right'></i> -->
+    </div>
 </body>
-
 </html>

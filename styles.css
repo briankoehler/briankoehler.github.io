@@ -1,177 +1,83 @@
+@font-face {
+    font-family: Tron;
+    src: url('Tr2n.ttf');
 
-html {
-    background: radial-gradient(ellipse at top left, #0D2135, #051422);
-    width: 100vw !important;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #6fc3df, 0 0 10px #6fc3df, 0 0 15px #24677e;
+    }
+    to {
+        text-shadow: 0 0 10px #6fc3df, 0 0 15px #8ecbdf, 0 0 20px #8ecbdf;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        text-shadow: 0 0 5px #6fc3df, 0 0 10px #6fc3df, 0 0 15px #24677e;
+        opacity: 1;
+    }
+}
+
+@keyframes run {
+    0% {
+        opacity: 1;
+        left: 0;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
 }
 
 body {
-    margin: 0;
+    background-color: #0c141f;
+    font-family: 'Tron';
+    color: #6fc3df;
     overflow-x: hidden;
 }
 
 
-/* Container */
 .container {
-    width: 100vw;
-    height: 92vh;
-    display: flex;
-}
-
-.container .column {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
-    height: 100%;
-}
-
-/* Navigation Bar */
-.nav {
-    background-color: #12263A;
-    overflow: hidden;
-    width: 100vw;
-    max-width: 100vw;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    height: 8vh;
-    line-height: 8vh;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    opacity: 90%;
-}
-
-.nav a {
-    color: #06BCC1;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    flex: 0 0 50px;
-    margin: 1em;
-}
-
-.nav-tabs {
-    padding-right: 2vw;
-}
-
-.nav a:hover {
-    color: #6ee5e9;
-}
-
-.nav a.active {
-    color: #FFFFFA;
-}
-
-.nav .main {
-    font-size: 36px;
-    margin-right: auto;
-    max-height: 8vh;
-    min-width: 50%;
-    text-align: left;
-}
-
-.nav .nav-tabs .icon {
-    display: none;
-}
-
-@media screen and (max-width: 750px) {
-    .nav .nav-tabs a {
-        display: none;
-    }
-    .nav .nav-tabs a.icon {
-        display: flex;
-        flex: 0 0 50px;
-    }
-}
-
-/* TODO: DISPLAY MENU ON SMALL SCREENS */
-
-/* Portrait */
-.portrait-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
-    width: 100%;
-    height: auto;
-}
-
-.portrait {
-    width: 50vw;
-    height: auto;
-    max-height: 92vh;
-}
-
-/* Hello Message */
-.hello-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 50vw;
-    height: 100%;
     flex-direction: column;
 }
 
-.hello {
-    font-family: "Source Code Pro";
-    font-weight: bold;
-    color: #F6AE2D;
-    font-size: 3.3vw;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 80px;
+#name {
+    /* animation: glow 1s ease-in-out infinite alternate; */
+    animation-name: fadein, glow;
+    animation-duration: 3s, 1s;
+    animation-delay: 0s, 3s;
+    animation-timing-function: ease-in, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, alternate;
 }
 
-.intro {
-    font-family: "Source Code Pro";
-    font-weight: bold;
-    color: #F6AE2D;
-    font-size: 1vw;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 80px;
+#cycle {
+    opacity: 0;
+    position: absolute;
+    animation: linear;
+    animation-name: run;
+    animation-duration: 2s;
 }
 
-/* About Me */
-.about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    overflow-y: hidden;
+.txt-lg {
+    font-size: 4rem;
 }
 
-.header {
-    font-family: "Quicksand";
-    font-weight: bold;
-    color: #F6AE2D;
-    font-size: 3.3vw;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 80px;
+.txt-md {
+    font-size: 2rem;
 }
 
-.about-info {
-    width: 50%;
-    font-family: "Quicksand";
-    color: #FFFFFA;
-    text-align: center;
-    font-size: 24px;
-}
-
-.about-info a {
-    color: #F26419;
-    text-decoration: none;
+.txt-sml {
+    font-size: 1rem;
 }
