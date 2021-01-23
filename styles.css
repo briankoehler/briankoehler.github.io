@@ -1,8 +1,21 @@
 
+* {
+    transition: width 0.75s;
+    
+}
+
 body {
     background-color: black;
     color: white;
     font-family: 'Rubik', sans-serif;
+}
+
+.highlight-blue {
+    color: lightblue;
+}
+
+.highlight-orange {
+    color: orangered;
 }
 
 #navbar {
@@ -33,18 +46,38 @@ body {
     margin-left: 20px;
 }
 
+#burger {
+    display: none;
+}
+
 .container {
     width: 50%;
     margin: auto;
 }
 
+.container + .container {
+    margin-top: 100px;
+}
+
 #landing {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 5% 25%;
+}
+
+#greeting-wrapper {
+    grid-column: 1;
 }
 
 #greeting {
     font-size: 4rem;
+}
+
+#sub-greeting {
+    font-size: 2rem;
+}
+
+#portrait-wrapper {
+    grid-column: 3;
 }
 
 #portrait {
@@ -57,8 +90,77 @@ body {
     width: 105%;
 }
 
-@media only screen and (max-width: 1281px) {
-    #portrait {
+#about {
+    font-size: 1.25rem;
+}
+
+#projects {
+    font-size: 1.25rem;
+}
+
+.project-item {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    height: 125px;
+    padding: 10px;
+}
+
+.project-item + .project-item {
+    margin-top: 25px;
+}
+
+.project-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.project-details {
+    color: lightgray;
+}
+
+@media only screen and (max-width: 1600px) {
+    #navbar {
+        width: 75%;
+    }
+
+    .container {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #navbar {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #navbar {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #portrait-wrapper {
         display: none;
+    }
+
+    #landing {
+        display: block;
+        margin: auto;
+    }
+
+    #nav-end a {
+        display: none;
+    }
+
+    #burger {
+        display: block;
     }
 }
