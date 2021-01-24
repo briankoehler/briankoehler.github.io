@@ -103,19 +103,37 @@ body {
     font-size: 1.25rem;
 }
 
-.project-item {
-    border: 2px solid cornflowerblue;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.project-item + .project-item {
+.project-wrapper + .project-wrapper {
     margin-top: 25px;
 }
 
-.project-item a {
-    color: white;
+.project-wrapper a {
     text-decoration: none;
+}
+
+.project-item {
+    border: 3px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 10px;
+    transition: border 0.5s;
+    color: white;
+}
+
+.project-item:hover {
+    border: 3px solid white;
+}
+
+.project-techs i + i {
+    margin-left: 15px;
+}
+
+.iconify {
+    font-size: 2rem;
+    color: white;
+}
+
+.iconify + .iconify {
+    margin-left: 15px;
 }
 
 .project-details {
@@ -160,7 +178,7 @@ body {
 
 @media only screen and (max-width: 900px) {
     #navbar {
-        width: 100%;
+        width: 95%;
     }
 
     .container {

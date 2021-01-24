@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/12458a3aa5.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     
     <link rel='stylesheet' href='styles.css'>
 </head>
@@ -25,7 +26,6 @@
             <a href='/#projects'>Projects</a>
             <i id='burger' class='fas fa-bars fa-2x'></i>
         </div>
-
     </div>
     
     <div id='landing' class='container'>
@@ -41,6 +41,7 @@
 
     <div id='about' class='container'>
         <h2>About</h2>
+
         <div id='about-details'>
             <p>Thanks for stopping by!  My name is Brian Koehler and I enjoy all types of projects ranging from web development to software development.
                 I primarily code in <span class='highlight-blue'>Python</span>, but also have moderate experience with <span class='highlight-blue'>JavaScript</span> and <span class='highlight-blue'>C++</span>.
@@ -56,22 +57,49 @@
 
     <div id='projects' class='container'>
         <h2>Projects</h2>
-        <div class='project-item'>
+
+        <div class='project-wrapper'>
             <a href='https://briankoehler.me/jon-int-tracker/'>
-                <h3>Jon Int Tracker</h3>
-                <p class='project-details'>Discord bot for dynamically tracking bad games by summoners in League of Legends. </p>
+                <div class='project-item'>
+                    <h3>Jon Int Tracker</h3>
+                    <div class='project-techs'>
+                        <span class="iconify" data-icon="cib:python" data-inline="false"></span>
+                        <span class="iconify" data-icon="cib:discord" data-inline="false"></span>
+                        <span class="iconify" data-icon="file-icons:sqlite" data-inline="false"></span>
+                    </div>
+                    <p class='project-details'>Discord bot for dynamically tracking bad games by summoners in League of Legends. </p>
+                </div>
             </a>
         </div>
-        <div class='project-item'>
+
+        <div class='project-wrapper'>
             <a href='https://github.com/kdagnan/FitTrack'>
-                <h3>FitTrack</h3>
-                <p class='project-details'>Web application for tracking your personal fitness journey - food logging, exercise logging, and weight tracking.</p>
+                <div class='project-item'>
+                    <h3>FitTrack</h3>
+                    <div class='project-techs'>
+                        <span class="iconify" data-icon="cib:django" data-inline="false"></span>
+                        <span class="iconify" data-icon="icomoon-free:html-five" data-inline="false"></span>
+                        <span class="iconify" data-icon="icomoon-free:css3" data-inline="false"></span>
+                        <span class="iconify" data-icon="bi:bootstrap-fill" data-inline="false"></span>
+                    </div>
+                    <p class='project-details'>Web application for tracking your personal fitness journey - food logging, exercise logging, and weight tracking.</p>
+                </div>
             </a>
         </div>
-        <div class='project-item'>
+
+        <div class='project-wrapper'>
             <a href='https://github.com/Garoto0518/CodeMonkeys'>
-                <h3>Attractions Salon</h3>
-                <p class='project-details'>Web application for potential and current clients of Attractions Salon to request appointments and access various information about the salon.</p>
+                <div class='project-item'>
+                    <h3>Attractions Salon</h3>
+                    <div class='project-techs'>
+                        <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                        <span class="iconify" data-icon="ion:logo-nodejs" data-inline="false"></span>
+                        <span class="iconify" data-icon="cib:mongodb" data-inline="false"></span>
+                        <span class="iconify" data-icon="cib:twilio" data-inline="false"></span>
+                        <span class="iconify" data-icon="cib:cc-stripe" data-inline="false"></span>
+                    </div>
+                    <p class='project-details'>Web application for potential and current clients of Attractions Salon to request appointments and access various information about the salon.</p>
+                </div>
             </a>
         </div>
     </div>
