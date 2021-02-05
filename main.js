@@ -2,7 +2,8 @@
 let prevScrollPosition = window.pageYOffset;
 window.onscroll = () => {
     let currentScrollPosition = window.pageYOffset;
-    if (currentScrollPosition < 0) {
+    console.log(currentScrollPosition);
+    if (currentScrollPosition < 100) {
         return
     }
     if (prevScrollPosition < currentScrollPosition) {
