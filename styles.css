@@ -194,6 +194,7 @@ body {
         align-items: center;
         overflow: hidden;
         transition: top 0.3s;
+        z-index: 9999;
     }
 
     #navbar a {
