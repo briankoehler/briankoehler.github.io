@@ -1,7 +1,6 @@
 
 * {
     transition: width 0.75s;
-    
 }
 
 html {
@@ -113,7 +112,7 @@ body {
 
 .project-item {
     border: 3px solid cornflowerblue;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 10px;
     transition: border 0.5s;
     color: white;
@@ -157,32 +156,60 @@ body {
 }
 
 @media only screen and (max-width: 1600px) {
-    #navbar {
-        width: 75%;
-    }
-
     .container {
         width: 65%;
+    }
+
+    #navbar {
+        width: 75%;
     }
 }
 
 @media only screen and (max-width: 1300px) {
+    .container {
+        width: 90%;
+    }
+
     #navbar {
         width: 90%;
     }
 
-    .container {
-        width: 90%;
-    }
 }
 
 @media only screen and (max-width: 900px) {
-    #navbar {
-        width: 95%;
-    }
-
     .container {
         width: 90%;
+    }
+
+    #navbar {
+        width: 90%;
+        background-color: black;
+        margin: 0 !important;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10vh;
+        align-items: center;
+        overflow: hidden;
+        transition: top 0.3s;
+    }
+
+    #navbar a {
+        color: white;
+    }
+
+    #nav-end a {
+        display: none;
+    }
+
+    #burger {
+        display: block !important;
+    }
+
+    #burger i {
+        font-size: 1.5rem;
     }
 
     #portrait-wrapper {
@@ -192,13 +219,7 @@ body {
     #landing {
         display: block;
         margin: auto;
+        margin-top: 15vh;
     }
 
-    #nav-end a {
-        display: none;
-    }
-
-    #burger {
-        display: block;
-    }
 }
