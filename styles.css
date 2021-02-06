@@ -233,6 +233,7 @@ body {
         align-items: center;
         justify-content: center;
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         top: -100vh;
         z-index: 9998;
         transition: opacity 0.5s;
