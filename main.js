@@ -4,10 +4,14 @@ const toggleMenu = () => {
     if (menu.style.top === "0vh") {
         menu.style.top = "-100vh";
         menu.style.opacity = 0;
+        document.body.style.height = 'auto';
+        document.body.style.overflow = 'visible';
     }
     else {
         menu.style.top = "0vh";
         menu.style.opacity = 1;
+        document.body.style.height = '100vh';
+        document.body.style.overflow = 'hidden';
     }
     return true;
 }

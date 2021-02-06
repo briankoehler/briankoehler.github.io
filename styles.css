@@ -236,7 +236,6 @@ body {
         top: -100vh;
         z-index: 9998;
         transition: opacity 0.5s;
-        touch-action: none;
     }
 
     #mobile-menu a {
