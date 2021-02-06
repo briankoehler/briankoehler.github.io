@@ -6,12 +6,16 @@ const toggleMenu = () => {
         menu.style.opacity = 0;
         document.body.style.height = 'auto';
         document.body.style.overflow = 'visible';
+        document.getElementById('content').classList.remove('blur');
+        document.getElementById('navbar').classList.remove('blur');
     }
     else {
         menu.style.top = "0vh";
         menu.style.opacity = 1;
         document.body.style.height = '100vh';
         document.body.style.overflow = 'hidden';
+        document.getElementById('content').classList.add('blur');
+        document.getElementById('navbar').classList.add('blur');
     }
     return true;
 }
