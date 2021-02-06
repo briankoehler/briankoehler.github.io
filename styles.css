@@ -201,7 +201,7 @@ body {
         height: 10vh;
         align-items: center;
         overflow-x: hidden;
-        transition: top 0.3s;
+        transition: top 0.3s, filter 0.5s;
         z-index: 500;
     }
 
@@ -255,10 +255,6 @@ body {
     }
 
     #content {
-        transition: filter 0.5s;
-    }
-
-    #navbar {
         transition: filter 0.5s;
     }
 
