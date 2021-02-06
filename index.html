@@ -25,10 +25,15 @@
         <div id='nav-end'>
             <a href='/#about'>About</a>
             <a href='/#projects'>Projects</a>
-            <a id='burger' href='javascript:void(0);'>
-                <i class='fas fa-bars fa-2x'></i>
-            </a>
+            <span id='burger'>
+                <i class='fas fa-bars fa-2x' onclick='toggleMenu()'></i>
+            </span>
         </div>
+    </div>
+
+    <div id='mobile-menu'>
+        <a href='/#about' onclick='toggleMenu()'>About</a>
+        <a href='/#projects' onclick='toggleMenu()'>Projects</a>
     </div>
     
     <div id='landing' class='container'>
@@ -53,7 +58,7 @@
                 My favorite project I have worked on is a Discord bot that tracks a dynamic list of League of Legends players, and sends notifications when a player has a poor game.
             </p>
             <p>
-                Along with my projects, I also enjoy the Chinese YoYo, weightlifting, playing video games, and baseball.  Go Yanks!
+                Along with my projects, I also enjoy the Chinese YoYo, weightlifting, playing video games, and baseball.
             </p>
         </div>
     </div>

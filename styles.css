@@ -53,6 +53,10 @@ body {
     display: none;
 }
 
+#mobile-menu {
+    opacity: 0;
+}
+
 .container {
     width: 50%;
     margin: auto;
@@ -192,9 +196,9 @@ body {
         left: 0;
         height: 10vh;
         align-items: center;
-        overflow: hidden;
+        overflow-x: hidden;
         transition: top 0.3s;
-        z-index: 9999;
+        z-index: 500;
     }
 
     #navbar a {
@@ -211,6 +215,38 @@ body {
 
     #burger i {
         font-size: 1.5rem;
+        z-index: 9999;
+    }
+
+    .fa-bars {
+        cursor: pointer;
+    }
+
+    #mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(20px);
+        top: -100vh;
+        z-index: 9998;
+        transition: opacity 0.5s;
+    }
+
+    #mobile-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #mobile-menu a + a {
+        margin-top: 10vh;
     }
 
     #portrait-wrapper {
