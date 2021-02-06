@@ -224,7 +224,6 @@ body {
 
     #mobile-menu {
         position: fixed;
-        top: 0;
         left: 0;
         height: 100vh;
         width: 100vw;
@@ -232,11 +231,12 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.9);
         top: -100vh;
         z-index: 9998;
         transition: opacity 0.5s;
+        touch-action: none;
     }
 
     #mobile-menu a {
