@@ -32,8 +32,15 @@
     </div>
 
     <div id='mobile-menu'>
-        <a href='/#about' onclick='toggleMenu()'>About</a>
-        <a href='/#projects' onclick='toggleMenu()'>Projects</a>
+        <div id='mobile-close'>
+            <i class="fas fa-times fa-2x" onclick='toggleMenu()'></i>
+        </div>
+
+        <div id='mobile-options'>
+            <a href='/'>Home</a>
+            <a href='/#about' onclick='toggleMenu()'>About</a>
+            <a href='/#projects' onclick='toggleMenu()'>Projects</a>
+        </div>
     </div>
     
     <div id='content'>
@@ -53,7 +60,7 @@
     
             <div id='about-details'>
                 <p>Thanks for stopping by!  My name is Brian Koehler and I enjoy all types of projects ranging from web development to software development.
-                    I primarily code in <span class='highlight-blue'>Python</span>, but also have moderate experience with <span class='highlight-blue'>JavaScript</span> and <span class='highlight-blue'>C++</span>.
+                    I primarily code in <span class='highlight-blue'>Python</span> and <span class='highlight-blue'>JavaScript</span>, but also have moderate experience with <span class='highlight-blue'>C++</span>.
                 </p>
                 <p>
                     My favorite project I have worked on is a Discord bot that tracks a dynamic list of League of Legends players, and sends notifications when a player has a poor game.
