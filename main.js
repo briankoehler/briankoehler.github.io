@@ -1,6 +1,6 @@
 
-const toggleMenu = (): boolean => {
-    let menu: HTMLElement = document.getElementById('mobile-menu');
+const toggleMenu = () => {
+    let menu = document.getElementById('mobile-menu');
     if (menu.style.top === '0vh') {
         menu.style.top = '-100vh';
         menu.style.opacity = '0';
@@ -18,13 +18,13 @@ const toggleMenu = (): boolean => {
         document.getElementById('navbar').classList.add('blur');
     }
     return true;
-}
+};
 
-let prevScrollPosition: number = window.pageYOffset;
-window.onscroll = (): void => {
-    let currentScrollPosition: number = window.pageYOffset;
+let prevScrollPosition = window.pageYOffset;
+window.onscroll = () => {
+    let currentScrollPosition = window.pageYOffset;
     if (currentScrollPosition < 100) {
-        return
+        return;
     }
     if (prevScrollPosition < currentScrollPosition) {
         document.getElementById('navbar').style.top = '-11vh';
@@ -33,4 +33,4 @@ window.onscroll = (): void => {
         document.getElementById('navbar').style.top = '0vh';
     }
     prevScrollPosition = currentScrollPosition;
-}
+};
