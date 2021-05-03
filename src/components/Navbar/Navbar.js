@@ -1,64 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavLink from './NavLink'
+import Logo from './Logo'
 
 
-const NavContainer = styled.nav`
-    /* Position */
-    /* position: sticky;
-    top: 32px; */
-    position: fixed;
-
-    /* Display */
+const Wrapper = styled.div`
+    width: 100%;
+    margin-top: 2.188em;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
-    /* Dimensions */
-    height: 64px;
-    width: calc(100% - 250px);
 
-    /* Margins */
-    margin-left: 125px;
-    margin-right: 125px;
-    margin-top: 64px;
-
-    a {
-        color: black;
-        text-decoration: none;
-        font-family: 'Rubik';
-        font-size: 1.75rem;
+    .nav-option {
+        font-family: 'Quicksand', sans-serif;
         font-weight: 400;
-    }
-
-    #logo {
-        font-size: 2.5rem;
-        font-weight: 700;
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
     }
 `
 
-const Links = styled.div`
-    display: flex;
-    flex-direction: row;
-
-    div + div {
-        margin-left: 36px;
-    }
+const OptionsWrapper = styled.div`
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content;
+    grid-column-gap: 2.8125em;
+    align-items: center;
 `
 
 
 const Navbar = () => {
     return (
-        <>
-            <NavContainer>
-                <NavLink id='logo' href='/' value='Brian Koehler' underLength='20%' />
-                <Links>
-                    <NavLink href='/projects' value='Projects' />
-                    <NavLink href='/about' value='About' />
-                    <NavLink href='/blog' value='Blog' />
-                </Links>
-            </NavContainer>
-        </>
+        <Wrapper>
+            <Logo />
+            <OptionsWrapper>
+                <a className='nav-option' href='/experience'>Experience</a>
+                <a className='nav-option' href='/about'>About</a>
+                <a className='nav-option' href='/contact'>Contact</a>
+                <a className='nav-option' href='/blog'>Blog</a>
+            </OptionsWrapper>
+        </Wrapper>
     )
 }
 
