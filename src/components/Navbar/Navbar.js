@@ -11,7 +11,6 @@ const Wrapper = styled.div`
     justify-content: space-between;
 
     .nav-option {
-        font-family: 'Quicksand', sans-serif;
         font-weight: 400;
         font-size: 1.5rem;
         color: white;
