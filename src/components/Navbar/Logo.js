@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 const Wrapper = styled.div`
-    border: 1px solid white;
+    border: 1px solid #F9F9F9;
     border-radius: 6px;
     width: fit-content;
 `
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const Text = styled.a`
     font-weight: 500;
     font-size: 3.725rem;
-    color: white;
+    color: #F9F9F9;
     text-decoration: none;
 `
 

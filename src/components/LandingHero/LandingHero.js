@@ -86,14 +86,15 @@ const LandingHero = () => {
     return (
         <Wrapper>
             <Greeting>
-                Hey, my name is
+                Hi, my name is
             </Greeting>
             <Name>
                 Brian Koehler.
             </Name>
             <Subtitle>
                 I’m a software engineer studying at the University of Florida interested in all 
-                things design and development always looking for opportunities to learn and build.
+                things design and development.  I'm always looking for opportunities to build and 
+                learn, so please feel free to reach out.
             </Subtitle>
             <Button>
                 <span id='mail-text'>Get In Touch</span>

@@ -9,13 +9,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    .nav-option {
-        font-weight: 400;
-        font-size: 1.5rem;
-        color: white;
-        text-decoration: none;
-    }
 `
 
 const OptionsWrapper = styled.div`
@@ -25,16 +18,23 @@ const OptionsWrapper = styled.div`
     align-items: center;
 `
 
+const Option = styled.a`
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #F9F9F9;
+    text-decoration: none;
+`
+
 
 const Navbar = () => {
     return (
         <Wrapper>
             <Logo />
             <OptionsWrapper>
-                <a className='nav-option' href='/experience'>Experience</a>
-                <a className='nav-option' href='/about'>About</a>
-                <a className='nav-option' href='/contact'>Contact</a>
-                <a className='nav-option' href='/blog'>Blog</a>
+                <Option href='/experience'>Experience</Option>
+                <Option href='/about'>About</Option>
+                <Option href='/contact'>Contact</Option>
+                <Option href='/blog'>Blog</Option>
             </OptionsWrapper>
         </Wrapper>
     )
