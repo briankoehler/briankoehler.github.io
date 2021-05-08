@@ -27,10 +27,8 @@ const Option = styled.a`
     border: 1px solid transparent;
     border-radius: 3px;
     padding: 0.3em;
-    /* line-height: 1.3rem; */
 
     :hover {
-        /* color: #FF5C5C; */
         border: 1px solid #FF5C5C;
     }
 `
