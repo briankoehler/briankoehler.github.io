@@ -19,10 +19,20 @@ const OptionsWrapper = styled.div`
 `
 
 const Option = styled.a`
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5rem;
     color: #F9F9F9;
     text-decoration: none;
+    transition: color 0.2s, border 0.1s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.3em;
+    /* line-height: 1.3rem; */
+
+    :hover {
+        /* color: #FF5C5C; */
+        border: 1px solid #FF5C5C;
+    }
 `
 
 

@@ -5,10 +5,11 @@ import { BiPaperPlane } from 'react-icons/bi'
 
 const Wrapper = styled.div`
     margin-top: 7.3125em;
+    width: 67%;
 `
 
 const Greeting = styled.p`
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     color: #FF5C5C;
 `
@@ -20,7 +21,7 @@ const Name = styled.h1`
 `
 
 const Subtitle = styled.h2`
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5rem;
     color: white;
     margin-top: 1em;
@@ -51,6 +52,7 @@ const Button = styled.a`
         position: absolute;
         left: 1.4em;
         transition: left 0.2s;
+        user-select: none;
     }
 
     #mail-icon {
@@ -76,7 +78,6 @@ const Button = styled.a`
     }
 
     :active {
-        background-color: #FF5C5C;
         transform: translateY(2%);
     }
 `
@@ -93,8 +94,8 @@ const LandingHero = () => {
             </Name>
             <Subtitle>
                 I’m a software engineer studying at the University of Florida interested in all 
-                things design and development.  I'm always looking for opportunities to build and 
-                learn, so please feel free to reach out.
+                things design and development. I'm always looking for opportunities to build and 
+                learn, so please reach out.
             </Subtitle>
             <Button>
                 <span id='mail-text'>Get In Touch</span>

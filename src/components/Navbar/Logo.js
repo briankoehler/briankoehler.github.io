@@ -3,9 +3,13 @@ import styled from 'styled-components'
 
 
 const Wrapper = styled.div`
-    border: 1px solid #F9F9F9;
+    border: 1px solid #F9F9F9; 
     border-radius: 6px;
     width: fit-content;
+
+    :hover {
+        color: #FF5C5C;
+    }
 `
 
 const Text = styled.a`

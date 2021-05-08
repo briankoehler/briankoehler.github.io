@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import './index.css'
 import Navbar from '../components/Navbar/Navbar'
 import HeroBackground from '../components/HeroBackground'
